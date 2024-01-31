@@ -1,0 +1,30 @@
+.Cloth {
+  max-width: 65rem;
+  width: 100%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+  top: 60%;
+  left: 23%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Cloth ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes Cloth-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

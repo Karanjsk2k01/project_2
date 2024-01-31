@@ -1,0 +1,94 @@
+.cloth {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.cloth h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.description {
+  font-style: italic;
+}
+
+.price {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: #ad5502;
+  font-size: 1.25rem;
+}
+
+.amount {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.amount input {
+  width: 2rem;
+  height: 2rem;
+}
+
+.button button {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #6e2102;
+  cursor: pointer;
+}
+
+.name {
+  padding: 0;
+}
+
+.sizesection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: teal;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+}
+
+.wrappersection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
