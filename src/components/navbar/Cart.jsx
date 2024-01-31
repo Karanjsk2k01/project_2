@@ -34,6 +34,7 @@ const Cart = (props) => {
     </ul >
   );
 
+  const price = `$${contextValue.totalAmount.toFixed(2)}`;
 
   return (
     <>
@@ -41,7 +42,7 @@ const Cart = (props) => {
         {cartItems}
         <div className="total">
           <span className="subtotal">Total</span>
-          <span className="subtotal"> $0</span>
+          <span className="subtotal"> {price}</span>
         </div>
         <div className="actions">
           <button className='button--alt' onClick={props.onClose}>

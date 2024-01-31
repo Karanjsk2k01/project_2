@@ -18,7 +18,9 @@ const NavbarCartButton = () => {
     setoverlay(false);
   }
 
-  const totalQuantity = 
+  const totalQuantity = cartValue.items.reduce((total, i) => {
+    return total + i.amount
+  }, 0)
 
   return (
     <div>
@@ -28,7 +30,7 @@ const NavbarCartButton = () => {
           <CartIcon />
         </span>
         <span>Cart</span>
-        <span className="badge">1</span>
+        <span className="badge">{totalQuantity}</span>
       </button>
     </div >
   )
